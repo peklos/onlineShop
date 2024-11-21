@@ -1,0 +1,121 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+
+.header-content {
+	max-width: 1300px;
+	min-width: 320px;
+/*	border: solid;*/
+	width: 69%;
+	margin: 0 auto;
+	margin-top: 10px;
+	height: 70px;
+}
+
+.login-button {
+	float: right;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	color: #FFFFFF;
+	background-color: #2A5275;
+	padding: 16px 26px;
+	border-radius: 4px;
+	border: none;
+	margin-top: 6px;
+}
+
+.header-svgs {
+	float: right;
+	margin-top: 6px;
+	margin-right: 20px;
+}
+
+.header-search span {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #838688;
+}
+
+.header-search {
+	float: right;
+	display: flex;
+	margin: 20px 15px 0 0;
+	width: ;
+}
+
+.header-search-svg1 {
+	margin-right: 10px;
+	margin-top: -3px;
+}
+
+.header-search-svg2 {
+	float: right;
+	margin-top: 40px;
+	position: relative;
+	left: 95px;
+	bottom: 7px;
+}
+
+.header-info {
+	float: right;
+	margin-top: 22px;
+}
+
+.header-info a{
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	color: #070C11;
+	text-decoration: none;
+	position: relative;
+	left: 25px;
+	margin-left: 20px;
+}
+
+.header-info span{
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	color: #838688;
+	position: relative;
+	left: 40px;
+}
+
+@media (max-width: 1740px) {
+	.header-info {
+		display: none;
+	}
+}
+
+@media (max-width: 1030px) {
+	.header-content {
+		width: 96%;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-svg-cart {
+		display: none;
+	}
+
+	.header-search {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.header-svgs {
+		display: none;
+	}
+}
