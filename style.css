@@ -390,6 +390,11 @@ main {
 	text-decoration: none;
 	margin: 20px 0 0 30px;
 	display: inline-block;
+	transition: .1s all;
+}
+
+.hits-spans a:hover{
+	color: black;
 }
 
 .hits-spans svg{
@@ -399,6 +404,11 @@ main {
 @media (max-width: 400px) {
 	.hits-spans h1 {
 		font-size: 25px;
+	}
+
+	.hits-spans a{
+		margin-top: 10px;
+		margin-left: 20px;
 	}
 }
 
@@ -413,6 +423,12 @@ main {
 	height: 596px;
 	width: 326px;
 	position: relative;
+	transition: .3s all;
+}
+
+.hits-products-card:hover{
+	border: 1px solid white;
+	box-shadow: 0px 0px 20px #e9e9e9;
 }
 
 .hpc-first {
@@ -652,5 +668,75 @@ main {
 @media (max-width: 720px) {
 	.hits-products {
 		width: 330px;
+	}
+}
+
+.novelty{
+	margin-top: 90px;
+}
+
+.promos {
+/*	border: 1px solid;*/
+	width: 101%;
+	height: 181px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.promos-block {
+/*	border: 1px solid red;*/
+	width: 645px;
+	height: 180px;
+	background-color: #EDF2F6;
+	border-radius: 10px;
+	text-decoration: none;
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	transition: .1s all;
+}
+
+.promos-block:hover {
+	box-shadow: 0px 0px 10px #4682B4;
+}
+
+.promos-block h1{
+	width: 234px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 120%;
+	color: #070C11;
+	margin: 50px 0 0 50px;
+}
+
+.promos-block img{
+	margin-left: 22%;
+}
+
+@media (max-width: 600px) {
+	.promos-block img {
+/*		margin-left: 15%;*/
+	}
+	.promos-block h1 {
+/*		margin-left: 20px;*/
+/*		font-size: 20px;*/
+		width: fit-content;
+	}
+}
+
+@media (max-width: 490px) {
+	.promos-block h1 {
+		margin-left: 20px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 490px) {
+	.promos-block img {
+/*		margin-left: 0%;*/
 	}
 }
