@@ -88,7 +88,7 @@ function handleAllClicks() {
         grayCompare.style.display = 'inline-block';
       });
     } else {
-      console.warn(`Красное сердечко не найдено для серого сердечка с индексом ${index}`);
+      console.warn(`Активных сравнений не найдено для серого сравнения с индексом ${index}`);
     }
     if (redBuy) { // проверка на существование соответствующего красного сердечка
       grayBuy.addEventListener('click', () => {
@@ -101,7 +101,7 @@ function handleAllClicks() {
         grayBuy.style.display = 'inline-block';
       });
     } else {
-      console.warn(`Красное сердечко не найдено для серого сердечка с индексом ${index}`);
+      console.warn(`Активной корзины не найдено для инактивной корзины с индексом ${index}`);
     }
   });
 }
