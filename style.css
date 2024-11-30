@@ -26,12 +26,27 @@ body {
 	border-radius: 4px;
 	border: none;
 	margin-top: 6px;
+	cursor: pointer;
+	transition: .1s all;
+}
+
+.login-button:hover {
+	background-color: #4682B4;
 }
 
 .header-svgs {
 	float: right;
 	margin-top: 6px;
 	margin-right: 20px;
+}
+
+.header-svgs svg {
+	border-radius: 50px;
+	transition: .1s all;
+}
+
+.header-svgs svg:hover{
+	box-shadow: 0px 0px 10px #4682B4;
 }
 
 .header-search span {
@@ -41,13 +56,14 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	color: #838688;
+	transition: 0.1s all;
 }
 
 .header-search {
 	float: right;
 	display: flex;
 	margin: 20px 15px 0 0;
-	width: ;
+	transition: .1s all;
 }
 
 .header-search-svg1 {
@@ -61,6 +77,11 @@ body {
 	position: relative;
 	left: 95px;
 	bottom: 7px;
+}
+
+.header-search span:hover {
+	color: #4682B4;
+	text-shadow: #4682B4 0px 0 20px;
 }
 
 .header-info {
