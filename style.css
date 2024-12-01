@@ -739,12 +739,7 @@ main {
 }
 
 @media (max-width: 600px) {
-	.promos-block img {
-/*		margin-left: 15%;*/
-	}
 	.promos-block h1 {
-/*		margin-left: 20px;*/
-/*		font-size: 20px;*/
 		width: fit-content;
 	}
 }
@@ -756,8 +751,14 @@ main {
 	}
 }
 
-@media (max-width: 490px) {
-	.promos-block img {
-/*		margin-left: 0%;*/
+.sigveipng {
+	position: relative;
+	right: 20px;
+}
+
+@media (max-width: 380px) {
+	.sigveipng {
+		position: relative;
+		right: 40px;
 	}
 }
