@@ -146,7 +146,7 @@ main {
 	margin: 625px auto 0 auto;
 	max-width: 1300px;
 	min-width: 320px;
-	height: 2000px;
+	height: 3500px;
 }
 
 .navbar {
@@ -761,4 +761,97 @@ main {
 		position: relative;
 		right: 40px;
 	}
+}
+
+.icon {
+	color: #4878A6;
+	transition: .1s all;
+}
+
+.icon:hover {
+ 	color: #2A5275;
+	transition: .1s all; 
+}
+
+.sigveys {
+	margin-top: 70px;
+}
+
+.percentpng {
+	margin-top: 30px;
+}
+
+.sigvei2 h2{
+	width: 234px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #070C11;
+    margin: 50px 0 0 50px;
+}
+
+@media (max-width: 670px) {
+	.sigvei2 h2 {
+		font-size: 28px;
+		z-index: 1;
+	}
+	.sigvei2 img{
+		margin-top: 20px;
+		position: relative;
+		right: 100px;
+		top: 50px;
+	}
+	.sigvei2 {
+		height: 250px;
+	}
+}
+
+/*@media (max-width: 670px) {
+	.sigvei2 h2 {
+		position: relative;
+		bottom: 40px;
+	}
+	.sigvei2 img {
+		right: 100px;
+		width: 161px;
+		height: 130px;
+		top: 30px;
+	}
+}*/
+@media (max-width: 490px) {
+	.sigvei2 h2{
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 520px) {
+	.sigvei2 img {
+		top: -40px;
+		left: -10px;
+	}
+	.sigvei2 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.unicycle {
+	margin-top: 70px;
+}
+
+.electric-bicycles {
+	margin-top: 70px;
+}
+
+@media (max-width: 1330px) {
+	.electric-bicycles {
+		margin-top: 300px;
+	}
+}
+
+.ebspans {
+	display: flex;
+	flex-wrap: wrap;
 }
