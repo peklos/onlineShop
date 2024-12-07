@@ -140,13 +140,11 @@ body {
 }
 
 main {
-/*	border: solid;*/
-	height: fit-content;
 	width: 1300px;
 	margin: 625px auto 0 auto;
 	max-width: 1300px;
 	min-width: 320px;
-	height: 3500px;
+	height: fit-content;
 }
 
 .navbar {
@@ -325,7 +323,7 @@ main {
 }
 
 
-.asd {
+.swiper2 {
 	display: none;
 	width: 100%;
 }
@@ -357,11 +355,11 @@ main {
 		width: 90%;
 	}
 
-	.asd {
+	.swiper2 {
 		display: block;
 	}
 
-	.asd img{
+	.swiper2 img{
 		width: 100%;
 	}
 
@@ -653,12 +651,6 @@ main {
 
 .hpc-bna:hover {
 	cursor: pointer;
-
-	.asdasd {
-	fill: #2A5275;
-	transition: .1s all;
-	}
-
 }
 
 .hits-buy-button:hover {
@@ -777,6 +769,13 @@ main {
 	margin-top: 70px;
 }
 
+
+@media (max-width: 1330px) {
+	.sigveys {
+		margin-top: 300px;
+	}
+}
+
 .percentpng {
 	margin-top: 30px;
 }
@@ -808,18 +807,6 @@ main {
 	}
 }
 
-/*@media (max-width: 670px) {
-	.sigvei2 h2 {
-		position: relative;
-		bottom: 40px;
-	}
-	.sigvei2 img {
-		right: 100px;
-		width: 161px;
-		height: 130px;
-		top: 30px;
-	}
-}*/
 @media (max-width: 490px) {
 	.sigvei2 h2{
 		font-size: 22px;
@@ -856,8 +843,221 @@ main {
 	flex-wrap: wrap;
 }
 
-@media (max-width: 1330px) {
-	.sigveys {
-		margin-top: 300px;
+.news {
+	margin-top: 70px;
+}
+
+.promos-block h3 {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 120%;
+	color: #070C11;
+	margin: 25px 0 0 45px;
+}
+
+.news-span1 {
+	width: 540px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #070C11;
+	margin: 20px 0 0 45px;
+}
+
+.news-span2 {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 120%;
+	color: #2A5275;
+	margin: 20px 0 0 45px;
+}
+
+.news-span3 {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 120%;
+	color: #838688;
+	margin-left: 500px;
+	position: relative;
+	bottom: 23px;
+}
+
+.news-spans {
+	height: 210px;
+	display: flex;
+	flex-direction: column
+}
+
+.news-spans span svg{
+	position: relative;
+	left: 7px;
+}
+
+@media (max-width: 625px) {
+	.news-spans {
+		height: fit-content;
+	}
+
+	.promos-block h3 {
+		width: 80vw;
+	}
+
+	.news-span1 {
+		width: 90vw;
+	}
+
+	.news-span3 {
+		margin-left: 70vw;
 	}
 }
+
+@media (max-width: 400px) {
+	.promos-block h3,
+	.news-span1,
+	.news-span2 {
+		margin-left: 10px;
+	}
+	.news-span3 {
+		margin-left: 60vw;
+	}
+}
+
+footer {
+	background-color: #EDF2F6;
+	height: 418px;
+	margin-top: 110px;
+}
+
+.footer-content-wrap {
+	width: 1300px;
+	margin: 0 auto;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fcw-block {
+/*	border: 1px solid;*/
+	height: fit-content;
+	width: 325px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 1330px) {
+	footer {
+		margin-top: 340px;
+		height: fit-content;
+	}
+
+	.footer-content-wrap{
+		width: 654px;
+		height: fit-content;
+	}
+}
+
+@media (max-width: 720px) {
+	.footer-content-wrap {
+		width: 327px;
+	}
+}
+
+
+@media (max-width: 461px) {
+	footer {
+		margin-top: 400px;
+	}
+}
+
+@media (max-width: 555px) {
+	footer {
+		width: 101vw;
+	}
+}
+
+.fcw-block img{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 184px;
+	height: 60px;
+}
+
+.fcw-block h1{
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 100%;
+	color: #070C11;
+	margin: 0 0 10px 0;
+}
+
+.fcw-block a{
+	text-decoration: none;
+}
+
+.fcw-block h2{
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	color: #838688;
+	margin: 0 0 20px 0;
+}
+
+.fcw-block span{
+	display: block;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #070C11;
+	margin-bottom: 5px;
+}
+
+.fcw-block p{
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 100%;
+	color: #838688;
+	margin: 38px 0 20px 0;
+}
+
+.fcw-block-a {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #070C11;
+	margin-bottom: 5px;
+	transition: .2s all;
+}
+
+.fcw-block-a:hover{
+	text-shadow: 0 0 3px black;
+}
+
+.footer-end {
+	width: 1300px;
+	margin: 33px auto 0 auto;
+}
+
+@media (max-width: 1330px) {
+	.footer-end {
+		width: 98vw;
+	}
+}
+
