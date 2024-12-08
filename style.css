@@ -1061,3 +1061,35 @@ footer {
 	}
 }
 
+.footer-end-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+}
+
+.footer-end-content span{
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	color: #838688;
+}
+
+.footer-end-content img{
+	border-radius: 50%;
+	transition: .1s all;
+}
+
+.footer-end-content img:hover{
+	box-shadow: 0 0 10px #4878A6;
+}
+
+@media (max-width: 845px) {
+	.footer-end-content{
+		display: block;
+	}
+}
+
+
