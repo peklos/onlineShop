@@ -562,18 +562,16 @@
         </section>
         <div class="hits-spans news">
             <h1>Новости</h1>
-            <a href="#">Читать все <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.68907 5.20829C5.85749 5.3663 5.85749 5.6337 5.68907 5.79171L0.673684 10.4971C0.418255 10.7368 1.378e-07 10.5557 1.33623e-07 10.2054L2.14003e-08 0.794595C1.72237e-08 0.444349 0.418255 0.263239 0.673684 0.502881L5.68907 5.20829Z" fill="#2A5275" /></svg></a>
+            <a href="news.php">Читать все <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.68907 5.20829C5.85749 5.3663 5.85749 5.6337 5.68907 5.79171L0.673684 10.4971C0.418255 10.7368 1.378e-07 10.5557 1.33623e-07 10.2054L2.14003e-08 0.794595C1.72237e-08 0.444349 0.418255 0.263239 0.673684 0.502881L5.68907 5.20829Z" fill="#2A5275" /></svg></a>
         </div>
         <div class="promos">
-            <a class="promos-block news-spans" href="#">
-                <!-- href="news.php" -->
+            <a class="promos-block news-spans" href="news.php">
                 <h3>Открытие нового магазина</h3>
                 <span class="news-span1">Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения</span>
                 <span class="news-span2">Подробнее<svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.68907 5.20829C5.85749 5.3663 5.85749 5.6337 5.68907 5.79171L0.673684 10.4971C0.418255 10.7368 1.378e-07 10.5557 1.33623e-07 10.2054L2.14003e-08 0.794595C1.72237e-08 0.444349 0.418255 0.263239 0.673684 0.502881L5.68907 5.20829Z" fill="#2A5275" /></svg></span>
                 <span class="news-span3">05 июня 2021</span>
             </a>
-            <!-- href="news.php" -->
-            <a class="promos-block news-spans" href="#"> 
+            <a class="promos-block news-spans" href="news.php">
                 <h3>Работа в праздничные дни</h3>
                 <span class="news-span1">Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов</span>
                 <span class="news-span2">Подробнее<svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.68907 5.20829C5.85749 5.3663 5.85749 5.6337 5.68907 5.79171L0.673684 10.4971C0.418255 10.7368 1.378e-07 10.5557 1.33623e-07 10.2054L2.14003e-08 0.794595C1.72237e-08 0.444349 0.418255 0.263239 0.673684 0.502881L5.68907 5.20829Z" fill="#2A5275" /></svg></span>
@@ -640,7 +638,7 @@
           <img src="images/home-icon.svg">
           <span>Главная</span>
         </a>
-        <a href="#catalogPopup" id="openCatalog" class="nav-item catalog-link">
+        <a href="#catalogPopup" class="nav-item">
           <img src="images/cart-icon.svg">
             <span>Каталог</span>
         </a>
@@ -648,11 +646,11 @@
           <img src="images/menu1-icon.svg">
             <span>Корзина</span>
         </a>
-        <a href="#search" class="nav-item">
+        <a href="#searchPopup" class="nav-item">
           <img src="images/search-icon.svg">
             <span>Поиск</span>
         </a>
-        <a href="#more" class="nav-item">
+        <a href="#morePopup" class="nav-item">
           <img src="images/more-icon.svg">
             <span>Еще</span>
         </a>
@@ -677,6 +675,30 @@
                 <li><a href="#"><img  src="images/9.svg" alt="svg">Умные игрушки</a></li>
                 <li><a href="#"><img  src="images/10.svg" alt="svg">Smart Watch</a></li>
             </ul>
+        </div>
+    </div>
+    <div id="morePopup" class="popup">
+        <a href="#popup_space"></a>
+        <div class="popup-content morePopup-content">
+            <a href="#popup_space" id="closePopup" class="close-btn">&times;</a>
+            <h2>Ещё</h2>
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Рассрочка 0-0-12</a></li>
+                <li><a href="#">Сервис и ремонт</a></li>
+                <li><a href="#">Опт/дропшиппинг</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="searchPopup" class="popup">
+        <a href="#popup_space"></a>
+        <div class="popup-content searchPopup-content">
+            <a href="#popup_space" id="closePopup" class="close-btn">&times;</a>
+            <h2>Поиск</h2>
+            <input type="text" name="search" placeholder="Введите запрос, например «Smart balance»">
+            <a href="#"><img src="images/search-icon.svg"></a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
