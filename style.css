@@ -6,7 +6,7 @@ body {
 .header-content {
    max-width: 1300px;
     min-width: 320px;
-    /*  border: solid;*/
+    /*	border: solid;*/
     width: 69%;
     margin: 0 auto;
     margin-top: 10px;
@@ -242,7 +242,7 @@ main {
     background-color: #EDF2F6;
     padding: 8.4px 15px;
     width: 295px;
-    /*  border: solid;*/
+    /*	border: solid;*/
     display: flex;
     align-items: center;
     transition: .1s all;
@@ -316,7 +316,7 @@ main {
 }
 
 .swiper-wrapper {
-    /*  gap: 10px;*/
+    /*	gap: 10px;*/
 }
 
 .swiper-pagination {
@@ -381,7 +381,7 @@ main {
 }
 
 .hits {
-    /*  border: solid;*/
+    /*	border: solid;*/
 }
 
 .hits-spans {
@@ -582,7 +582,7 @@ main {
     color: #FFFFFF;
     margin: 0 0 0 20px;
     position: relative;
-    /*  top: 10px;*/
+    /*	top: 10px;*/
     bottom: 27px;
 }
 
@@ -690,7 +690,7 @@ main {
 }
 
 .promos {
-    /*  border: 1px solid;*/
+    /*	border: 1px solid;*/
     width: 101%;
     height: 181px;
     margin-top: 50px;
@@ -700,7 +700,7 @@ main {
 }
 
 .promos-block {
-    /*  border: 1px solid red;*/
+    /*	border: 1px solid red;*/
     width: 645px;
     height: 180px;
     background-color: #EDF2F6;
@@ -951,7 +951,7 @@ footer {
 }
 
 .fcw-block {
-    /*  border: 1px solid;*/
+    /*	border: 1px solid;*/
     height: fit-content;
     width: 325px;
     display: flex;
@@ -1206,10 +1206,10 @@ footer {
 .popup {
     display: none;
     position: fixed;
-    bottom: 60px; 
+    bottom: 0;
     left: 3vw;
     width: 94%;
-    height: 92%;
+    height: 85%;
     background-color: #EDF2F6;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -1217,6 +1217,20 @@ footer {
     z-index: 1000;
     animation: slideUp .5s ease-out;
     box-shadow: 0px 0px 1000px #2A5275;
+    margin-bottom: 60px;
+    padding-bottom: 100px;
+}
+
+@media (max-height: 1350px) {
+    .popup {
+        height: 80%;
+    }
+}
+
+@media (max-height: 830px) {
+    .popup {
+        height: 75%;
+    }
 }
 
 @keyframes slideUp {
@@ -1301,4 +1315,60 @@ footer {
 #popup_space {
     position: fixed;
     top: 10px;
+}
+
+.morePopup-content li a{
+    border-bottom: 1px solid #C8CACB;
+    padding: 10px 0;
+}
+
+@media (max-width: 500px) {
+    .morePopup-content {
+        margin-left: 0;
+    }
+    .searchPopup-content {
+        margin-left: 0;
+    }
+}
+
+.searchPopup-content {
+    position: relative;
+}
+
+.searchPopup-content input{
+    width: calc(98% - 40px);
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #4878A6;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: black;
+    padding-right: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.searchPopup-content input::placeholder {
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchPopup-content img{
+    margin-top: -47px;
+    margin-right: 1vw;
+    padding: 10px;
+    float: right;
+    z-index: 100;
+    position: relative;
+}
+
+.searchPopup-content img:active {
+    box-shadow: 2px 8px 12px #2A5275;
+    border-radius: 50%;
 }
